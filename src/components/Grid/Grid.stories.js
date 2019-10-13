@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { jsxDecorator } from 'storybook-addon-jsx';
 
 import Grid from './Grid';
 import GridItem from '../GridItem';
@@ -8,9 +7,7 @@ import GridItem from '../GridItem';
 import '../../css/scss/utilities/_spacing.scss';
 
 let module;
-let stories = storiesOf('Molecules/Layout and Containers/Layout Grid', module);
-
-stories.addDecorator(jsxDecorator);
+let stories = storiesOf('Molecules/Layout and Containers/Grid', module);
 
 stories.add('Default', () => (
   <Grid>
