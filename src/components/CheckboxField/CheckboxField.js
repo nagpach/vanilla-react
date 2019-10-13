@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Field } from '../Field/Field';
 import { OptionList } from '../OptionList/OptionList';
+import './CheckboxField.scss';
 
 export class CheckboxField extends Component {
   render() {
-    const fieldClass = '';
+    const fieldClass = 'c-checkbox-field';
 
     return (
       <Field

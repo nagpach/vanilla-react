@@ -1,7 +1,49 @@
-.u-spacing-large {
-  margin: 2rem;
-}
+@import '../abstracts/variables';
 
 .u-margin-none {
   margin: 0;
+}
+
+.u-margin-small {
+  margin: $spacing-small;
+}
+
+.u-margin-medium {
+  margin: $spacing;
+}
+
+.u-margin-large {
+  margin: $spacing-large;
+}
+
+.u-margin-top-none {
+  margin-top: none;
+}
+
+.u-margin-top-small {
+  margin-top: $spacing-small;
+}
+
+.u-margin-top-medium {
+  margin-top: $spacing;
+}
+
+.u-margin-top-large {
+  margin-top: $spacing-large;
+}
+
+.u-margin-bottom-none {
+  margin-bottom: none;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: $spacing-small;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: $spacing;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: $spacing-large;
 }

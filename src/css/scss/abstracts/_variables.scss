@@ -105,7 +105,7 @@ $line-height: 1.5;
 /**
  * Max Width
  */
-$l-max-width: 60rem !default;
+$l-max-width: 70rem !default;
 $l-linelength-width: 36rem !default;
 
 /*------------------------------------*\
@@ -118,8 +118,8 @@ $l-linelength-width: 36rem !default;
  */
 
 $spacing: 1rem;
-$spacing-small: round(0.5 * $spacing);
-$spacing-large: round(2 * $spacing);
+$spacing-small: 0.5rem;
+$spacing-large: 2rem;
 
 /*------------------------------------*\
     #BORDERS
