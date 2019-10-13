@@ -1,13 +1,9 @@
 import React, { PropTypes } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { withKnobs } from '@storybook/addon-knobs';
-
 import { Button } from './Button';
 
 let stories = storiesOf('Molecules/Buttons/Button', module);
-
-
 
 stories.add('Default', () => (
   <Button onClick={() => console.log('clicked!!')} />
