@@ -37,7 +37,8 @@ module.exports = plop => {
         pattern: /;\n$/,
         separator: '',
         path: 'src/index.js',
-        template: "export { default as {{pascalCase name}} } from './components/{{pascalCase name}}';",
+        template:
+          "export { default as {{pascalCase name}} } from './components/{{pascalCase name}}';"
       },
       function sortIndex() {
         process.chdir(plop.getPlopfilePath());
@@ -46,18 +47,42 @@ module.exports = plop => {
         const indexFile = `${plop.getDestBasePath()}/src/index.js`;
 
         if (fs.existsSync(indexFile)) {
-          const nameRegex = /default as ([^\s]*)/
-          const sorted = fs.readFileSync(indexFile, "utf8")
+          const nameRegex = /default as ([^\s]*)/;
+          const sorted = fs
+            .readFileSync(indexFile, 'utf8')
             .split(';\n')
             .sort((a, b) => {
-              const aName = a.match(nameRegex)[1]
-              const bName = b.match(nameRegex)[1]
-              return aName.localeCompare(bName)
+              const aName = a.match(nameRegex)[1];
+              const bName = b.match(nameRegex)[1];
+              return aName.localeCompare(bName);
             })
             .join(';\n');
           fs.writeFileSync(indexFile, sorted + ';\n');
-          return `/src/index.js lines sorted`
+          return `/src/index.js lines sorted`;
         }
+      }
+    ]
+  });
+
+  plop.setGenerator('page', {
+    description: 'Create a page template',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your page name?'
+      }
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/pages/{{pascalCase name}}/{{pascalCase name}}.js',
+        templateFile: 'plop-templates/Page/Page.js.hbs'
+      },
+      {
+        type: 'add',
+        path: 'src/pages/{{pascalCase name}}/{{pascalCase name}}.stories.js',
+        templateFile: 'plop-templates/Page/Page.stories.js.hbs'
       }
     ]
   });
