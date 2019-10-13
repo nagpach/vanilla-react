@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
 import { Header } from '../../components/Header/Header';
 import { Hero } from '../../components/Hero/Hero';
 import { Section } from '../../components/Section/Section';
@@ -11,7 +12,7 @@ export class Homepage extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
+        <Header joke='u-margin-bottom-none' />
 
         <main role='main'>
           <Hero

@@ -4,6 +4,11 @@
       "name": "$color-brand-blue",
       "value": "#0000ff",
       "comment": ""
+    },
+    {
+      "name": "$color-brand-orange",
+      "value": "orange",
+      "comment": ""
     }
   ],
   "meta": {
