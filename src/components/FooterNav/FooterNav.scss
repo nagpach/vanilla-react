@@ -1,4 +1,5 @@
-@import "../../css/scss/abstracts/variables.scss";
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
 
 /*------------------------------------*\
     #FOOTER NAV
@@ -8,13 +9,13 @@
  * 1) Navigation within the footer
  */
 .c-footer-nav__list {
-    display: flex;
+  display: flex;
 }
 
 .c-footer-nav__item {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .c-footer-nav__link {
-    color: $color-neutral-white;
+  color: $color-neutral-white;
 }

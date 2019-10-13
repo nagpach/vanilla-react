@@ -1,12 +1,12 @@
 import React, { PropTypes } from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
+
 
 import { SelectField } from "./SelectField";
 
 let stories = storiesOf("Molecules/Forms/SelectField", module);
 
-stories.addDecorator(withKnobs);
+
 
 stories.add("Default", () => (
 	<SelectField

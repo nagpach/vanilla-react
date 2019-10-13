@@ -1,13 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
+
 
 import { Hero } from "./Hero";
 import heroImg from "../../images/fpo-1200x650.png";
 
 let stories = storiesOf("Molecules/Blocks/Hero", module);
 
-stories.addDecorator(withKnobs);
+
 
 const hero = {
 	imgsrc: { heroImg },

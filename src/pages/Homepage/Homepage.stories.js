@@ -7,7 +7,7 @@ import { Homepage } from './Homepage';
 
 let stories = storiesOf('Pages/Homepage', module);
 
-stories.addDecorator(withKnobs);
+
 
 /**
  * Long Card list array

@@ -1,12 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
+
 
 import { TextField } from "./TextField";
 
 let stories = storiesOf("Molecules/Forms/TextField", module);
 
-stories.addDecorator(withKnobs);
+
 
 stories.add("Default", () => (
 	<TextField

@@ -7,7 +7,7 @@ import { Button } from './Button';
 
 let stories = storiesOf('Molecules/Buttons/Button', module);
 
-stories.addDecorator(withKnobs);
+
 
 stories.add('Default', () => (
   <Button onClick={() => console.log('clicked!!')} />

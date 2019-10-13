@@ -1,3 +1,6 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
 /*------------------------------------*\
     #LOGO
 \*------------------------------------*/
@@ -6,13 +9,13 @@
  * Branding image or text of the site
  */
 .c-logo {
-	display: inline;
-	max-width: 120px;
+  display: inline;
+  max-width: 120px;
 }
 
 /**
  * Logo image 
  */
 .c-logo__img {
-	display: block;
+  display: block;
 }

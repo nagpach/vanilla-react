@@ -6,7 +6,7 @@ import { Section } from './Section';
 
 let stories = storiesOf('Organisms/Sections/Section', module);
 
-stories.addDecorator(withKnobs);
+
 
 stories.add('Default', () => (
   <Section

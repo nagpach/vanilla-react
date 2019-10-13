@@ -6,7 +6,7 @@ import { FooterNav } from './FooterNav';
 
 let stories = storiesOf('Molecules/Navigation/FooterNav', module);
 
-stories.addDecorator(withKnobs);
+
 
 stories.add('Default', () => (
   <div style={{ backgroundColor: '#333333' }}>

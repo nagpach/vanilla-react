@@ -1,13 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
+
 
 import { linkTo } from "@storybook/addon-links";
 import { TextPage } from "./TextPage";
 
 let stories = storiesOf("Pages/TextPage", module);
 
-stories.addDecorator(withKnobs);
+
 
 const navitems = [
 	{
