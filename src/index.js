@@ -1,3 +1,6 @@
+
+export { default as AtomsText } from './components/AtomsText';
+export { default as AtomsToken } from './components/AtomsToken';
 export { default as Button } from './components/Button';
 export { default as Card } from './components/Card';
 export { default as CardList } from './components/CardList';

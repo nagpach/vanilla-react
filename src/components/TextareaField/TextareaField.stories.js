@@ -1,21 +1,22 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 
 import { TextareaField } from "./TextareaField";
 
-let stories = storiesOf("Molecules/Forms/TextareaField", module);
+export default {
+	title: "Molecules/Forms/TextareaField"
+};
 
 
 
-stories.add("Default", () => (
+export const Default = () => (
 	<TextareaField
 		fieldNote="This is a field note"
 		ariaDescribedBy="textarea-field"
 	/>
-));
+);
 
-stories.add("Required", () => (
+export const Required = () => (
 	<TextareaField
 		name="text-field-1"
 		label="Label"
@@ -26,9 +27,9 @@ stories.add("Required", () => (
 		fieldNote="This is a required field."
 		ariaDescribedBy="required-textarea-field"
 	/>
-));
+);
 
-stories.add("Disabled", () => (
+export const Disabled = () => (
 	<TextareaField
 		name="text-field-1"
 		label="Label"
@@ -39,9 +40,9 @@ stories.add("Disabled", () => (
 		ariaDescribedBy="disabled-textarea-field"
 		disabled
 	/>
-));
+);
 
-stories.add("Error", () => (
+export const Error = () => (
 	<TextareaField
 		hasError
 		name="text-field-1"
@@ -53,4 +54,4 @@ stories.add("Error", () => (
 		fieldNote="There is an error."
 		ariaDescribedBy="error-textarea-field"
 	/>
-));
+);

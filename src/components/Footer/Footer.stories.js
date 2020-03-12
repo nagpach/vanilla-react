@@ -1,11 +1,8 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
-
 import { Footer } from "./Footer";
 
-let stories = storiesOf("Organisms/Global/Footer", module);
+export default {
+    title: "Organisms/Global/Footer"
+}
 
-
-
-stories.add("Default", () => <Footer>Hello Footer</Footer>);
+export const Default = () => <Footer>Hello Footer</Footer>;

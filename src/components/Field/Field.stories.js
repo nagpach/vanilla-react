@@ -1,11 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Field } from './Field';
 
-let stories = storiesOf('Molecules/Forms/Field', module);
+export default { 
+  title: 'Molecules/Forms/Field'
+};
 
-stories.add('Default', () => (
+export const Default = () => (
   <Field>
     <div className='fpo'>Field</div>
   </Field>
-));
+);
