@@ -23,7 +23,5 @@ module.exports = {
             },
         },
         '@storybook/addon-actions',
-        //'@storybook/addon-storysource',
-        //'@storybook/addon-a11y',
       ],
 };
