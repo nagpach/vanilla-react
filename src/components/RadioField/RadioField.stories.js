@@ -1,16 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
 
 import { RadioField } from "./RadioField";
 
-let stories = storiesOf("Molecules/Forms/RadioField", module);
+export default { 
+	title: "Molecules/Forms/RadioField"
+}
 
+export const Default = () => <RadioField />;
 
-
-stories.add("Default", () => <RadioField />);
-
-stories.add("Required", () => (
+export const Required = () => (
 	<RadioField
 		required={true}
 		listItems={[
@@ -35,9 +33,9 @@ stories.add("Required", () => (
 		]}
 		fieldNote="This is a required field"
 	/>
-));
+);
 
-stories.add("Disabled", () => (
+export const Disabled = () => (
 	<RadioField
 		fieldClass="c-field has-error"
 		disabled
@@ -66,9 +64,9 @@ stories.add("Disabled", () => (
 		]}
 		fieldNote="This is a disabled field"
 	/>
-));
+);
 
-stories.add("Error", () => (
+export const Error = () => (
 	<RadioField
 		fieldClass="c-field has-error"
 		hasError
@@ -94,4 +92,4 @@ stories.add("Error", () => (
 		]}
 		fieldNote="This is a field with an error."
 	/>
-));
+);

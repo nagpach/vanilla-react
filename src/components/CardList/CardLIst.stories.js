@@ -1,12 +1,11 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
-
 
 import { CardList } from "./CardList";
 
-let stories = storiesOf("Organisms/Lists-And-Collections/CardList", module);
+export default { 
+    title:"Organisms/Lists-And-Collections/CardList"
+};
 
 
 
-stories.add("Default", () => <CardList />);
+export const Default = () => <CardList />;

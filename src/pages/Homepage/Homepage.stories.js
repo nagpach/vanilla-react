@@ -1,9 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import { Homepage } from './Homepage';
 
-let stories = storiesOf('Pages/Homepage', module);
+export default {
+  component: Homepage,
+    title: 'Pages/Homepage',
+}
 
 /**
  * Long Card list array
@@ -74,7 +76,7 @@ const longCardList = [
   }
 ];
 
-stories.add('Template', () => (
+export const Template =  () => (
   <Homepage>
     <p>
       A text passage contains arbitrary text that might come from a CMS. It
@@ -121,9 +123,9 @@ stories.add('Template', () => (
 
     <p>That is all.</p>
   </Homepage>
-));
+);
 
-stories.add('Mountains', () => (
+export const Mountains = () => (
   <Homepage
     heroImgSrc='https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
     heroImgAlt='Snow-covered jagged mountains'
@@ -132,9 +134,9 @@ stories.add('Mountains', () => (
     section1Title='Here are a bunch of mountains'
     section1Description='Some cards talking about mountains'
   />
-));
+);
 
-stories.add('Forest w/ extra cards', () => (
+export const Forest = () => (
   <Homepage
     heroImgSrc='https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80'
     heroImgAlt='Forest with sunlight poking through trees'
@@ -144,4 +146,8 @@ stories.add('Forest w/ extra cards', () => (
     section1Title='Here are a bunch of forests'
     section1Description='Some cards talking about forests'
   />
-));
+);
+
+Forest.story = {
+  name: 'Forest w/ extra cards'
+}

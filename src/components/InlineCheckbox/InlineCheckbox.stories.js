@@ -1,7 +1,8 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { InlineCheckbox } from './InlineCheckbox';
 
-let stories = storiesOf('Molecules/Forms/InlineCheckbox', module);
+export default { 
+    title: 'Molecules/Forms/InlineCheckbox'
+};
 
-stories.add('Default', () => <InlineCheckbox />);
+export const Default = () => <InlineCheckbox />;

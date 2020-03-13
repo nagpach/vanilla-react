@@ -1,14 +1,13 @@
 import React, { PropTypes } from "react";
-import { storiesOf } from "@storybook/react";
-
 
 import { SelectField } from "./SelectField";
 
-let stories = storiesOf("Molecules/Forms/SelectField", module);
+export default { 
+	title: "Molecules/Forms/SelectField"
+};
 
 
-
-stories.add("Default", () => (
+export const Default =  () => (
 	<SelectField
 		listItems={[
 			{
@@ -38,8 +37,8 @@ stories.add("Default", () => (
 			}
 		]}
 	/>
-));
+);
 
-stories.add("Required", () => <SelectField required />);
-stories.add("Disabled", () => <SelectField disabled />);
-stories.add("Error", () => <SelectField hasError />);
+export const Required =  () => <SelectField required />;
+export const Disabled = () => <SelectField disabled />;
+export const  Error = () => <SelectField hasError />;

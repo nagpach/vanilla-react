@@ -1,11 +1,9 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
 
 import { PrimaryNav } from "./PrimaryNav";
 
-let stories = storiesOf("Molecules/Navigation/PrimaryNav", module);
+export default { 
+    title: "Molecules/Navigation/PrimaryNav"
+};
 
-
-
-stories.add("Default", () => <PrimaryNav />);
+export const Default = () => <PrimaryNav />;

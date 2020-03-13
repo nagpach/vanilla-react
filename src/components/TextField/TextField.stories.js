@@ -1,14 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
 
 import { TextField } from "./TextField";
 
-let stories = storiesOf("Molecules/Forms/TextField", module);
+export default { 
+	title: "Molecules/Forms/TextField"
+};
 
 
 
-stories.add("Default", () => (
+export const Default = () => (
 	<TextField
 		name="text-field-1"
 		type="text"
@@ -17,9 +17,9 @@ stories.add("Default", () => (
 		fieldNote="This is the field note."
 		ariaDescribedBy="text-field"
 	/>
-));
+);
 
-stories.add("Required", () => (
+export const Required = () => (
 	<TextField
 		name="text-field-1"
 		label="Label"
@@ -30,9 +30,9 @@ stories.add("Required", () => (
 		fieldNote="This is a required field."
 		ariaDescribedBy="required-text-field"
 	/>
-));
+);
 
-stories.add("Disabled", () => (
+export const Disabled = () => (
 	<TextField
 		name="text-field-1"
 		label="Label"
@@ -43,9 +43,9 @@ stories.add("Disabled", () => (
 		ariaDescribedBy="disabled-text-field"
 		disabled
 	/>
-));
+);
 
-stories.add("Email", () => (
+export const Email =  () => (
 	<TextField
 		name="text-field-1"
 		label="Label"
@@ -56,9 +56,9 @@ stories.add("Email", () => (
 		fieldNote="This is a fieldnote."
 		ariaDescribedBy="error-text-field"
 	/>
-));
+);
 
-stories.add("Error", () => (
+export const Error = () => (
 	<TextField
 		hasError
 		name="text-field-1"
@@ -70,4 +70,4 @@ stories.add("Error", () => (
 		fieldNote="There is an error."
 		ariaDescribedBy="error-text-field"
 	/>
-));
+);

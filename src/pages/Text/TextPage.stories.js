@@ -1,13 +1,11 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
-
 import { linkTo } from "@storybook/addon-links";
 import { TextPage } from "./TextPage";
 
-let stories = storiesOf("Pages/TextPage", module);
-
-
+export default {
+	component: TextPage,
+	title: "Pages/TextPage"
+}
 
 const navitems = [
 	{
@@ -27,7 +25,7 @@ const navitems = [
 	}
 ];
 
-stories.add("Template", () => (
+export const Template =  () => (
 	<TextPage
 		navitems={navitems}
 		title="Text Page Template"
@@ -79,9 +77,9 @@ stories.add("Template", () => (
 
 		<p>That is all.</p>
 	</TextPage>
-));
+);
 
-stories.add("Blog Post", () => (
+export const BlogPost = () => (
 	<TextPage
 		navitems={navitems}
 		title="This is a blog post"
@@ -133,9 +131,9 @@ stories.add("Blog Post", () => (
 
 		<p>That is all.</p>
 	</TextPage>
-));
+);
 
-stories.add("Legal Page", () => (
+export const LegalPage = () => (
 	<TextPage
 		navitems={navitems}
 		title="Terms and Conditions"
@@ -157,4 +155,4 @@ stories.add("Legal Page", () => (
 			consequat.
 		</p>
 	</TextPage>
-));
+);

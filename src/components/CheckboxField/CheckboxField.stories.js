@@ -1,12 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { CheckboxField } from './CheckboxField';
 
-let stories = storiesOf('Molecules/Forms/CheckboxField', module);
+export default { 
+  title: 'Molecules/Forms/CheckboxField'
+};
 
-stories.add('Default', () => <CheckboxField />);
+export const Default = () => <CheckboxField />;
 
-stories.add('Required', () => (
+export const Required = () => (
   <CheckboxField
     required={true}
     listItems={[
@@ -31,9 +32,9 @@ stories.add('Required', () => (
     ]}
     fieldNote='This is a required field'
   />
-));
+);
 
-stories.add('Disabled', () => (
+export const Disabled = () => (
   <CheckboxField
     fieldClass='c-field has-error'
     disabled
@@ -62,9 +63,9 @@ stories.add('Disabled', () => (
     ]}
     fieldNote='This is a disabled field'
   />
-));
+);
 
-stories.add('Error', () => (
+export const  Error = () => (
   <CheckboxField
     fieldClass='c-field has-error'
     hasError
@@ -90,4 +91,4 @@ stories.add('Error', () => (
     ]}
     fieldNote='This is a field with an error.'
   />
-));
+);

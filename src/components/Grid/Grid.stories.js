@@ -1,15 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-
 import Grid from './Grid';
 import GridItem from '../GridItem';
 
 import '../../css/scss/utilities/_spacing.scss';
 
-let module;
-let stories = storiesOf('Molecules/Layout and Containers/Grid', module);
+export default { 
+  title: 'Molecules/Layout and Containers/Grid'
+};
 
-stories.add('Default', () => (
+export const Default = () => (
   <Grid>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -21,9 +20,9 @@ stories.add('Default', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Side by side', () => (
+export const SidebySide = () => (
   <Grid variant='side-by-side'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -38,9 +37,9 @@ stories.add('Side by side', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('2up grid', () => (
+export const  twoUpGrid =  () => (
   <Grid variant='2up'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -55,9 +54,13 @@ stories.add('2up grid', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('1 to 3up grid', () => (
+twoUpGrid.story = {
+  name: '2 up grid'
+}
+
+export const onetothreeUpgrid  =  () => (
   <Grid variant='1-to-3up'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -78,9 +81,11 @@ stories.add('1 to 3up grid', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('3up grid', () => (
+onetothreeUpgrid.story = { name: '1 to 3up grid'}
+
+export const threeUpGrid =  () => (
   <Grid variant='3up'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -101,9 +106,11 @@ stories.add('3up grid', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('4up grid', () => (
+threeUpGrid.story = { name:'3up grid' };
+
+export const fourUpGrid =  () => (
   <Grid variant='4up'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -130,9 +137,11 @@ stories.add('4up grid', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
+fourUpGrid.story = { name:'4up grid' };
 
-stories.add('Grid spacing none', () => (
+
+export const GridSpacingNone =  () => (
   <Grid variant='2up' gap='none'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -147,9 +156,9 @@ stories.add('Grid spacing none', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid spacing small ', () => (
+export const GridSpacingSmall = () => (
   <Grid variant='2up' gap='small'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -164,9 +173,9 @@ stories.add('Grid spacing small ', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid spacing large', () => (
+export const GridSpacingLarge = () => (
   <Grid variant='2up' gap='large'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -181,9 +190,9 @@ stories.add('Grid spacing large', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid spacing xl', () => (
+export const GridSpacingXl = () => (
   <Grid variant='2up' gap='xl'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -198,9 +207,9 @@ stories.add('Grid spacing xl', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid row spacing none', () => (
+export const GridRowSpacingNone =  () => (
   <Grid variant='2up' rowGap='none'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -215,9 +224,9 @@ stories.add('Grid row spacing none', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid row spacing small ', () => (
+export const GridRowSpacingSmall =  () => (
   <Grid variant='2up' rowGap='small'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -232,9 +241,9 @@ stories.add('Grid row spacing small ', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid row spacing large', () => (
+export const GridRowSpacingLarge =   () => (
   <Grid variant='2up' rowGap='large'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -249,9 +258,9 @@ stories.add('Grid row spacing large', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid row spacing xl', () => (
+export const gridRowSpacingXL =  () => (
   <Grid variant='2up' rowGap='xl'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -266,9 +275,11 @@ stories.add('Grid row spacing xl', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid column spacing none', () => (
+gridRowSpacingXL.story = { name:'Grid row spacing xl'}
+
+export const gridColumnSpacingNone =  () => (
   <Grid variant='2up' colGap='none'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -283,9 +294,11 @@ stories.add('Grid column spacing none', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid column spacing small ', () => (
+gridColumnSpacingNone.story = { name:'Grid column spacing none'}
+
+export const gridColumnSpacingSmall =  () => (
   <Grid variant='2up' colGap='small'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -300,9 +313,11 @@ stories.add('Grid column spacing small ', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid column spacing large', () => (
+gridColumnSpacingSmall.story = { name:'Grid column spacing small'}
+
+export const gridColumnSpacingL = () => (
   <Grid variant='2up' colGap='large'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -317,9 +332,11 @@ stories.add('Grid column spacing large', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
 
-stories.add('Grid column spacing xl', () => (
+gridColumnSpacingL.story = { name:'Grid column spacing large'}
+
+export const gridColumnSpacingXL =  () => (
   <Grid variant='2up' colGap='xl'>
     <GridItem>
       <div className='fpo u-margin-none'>Grid Item</div>
@@ -334,4 +351,6 @@ stories.add('Grid column spacing xl', () => (
       <div className='fpo u-margin-none'>Grid Item</div>
     </GridItem>
   </Grid>
-));
+);
+
+gridColumnSpacingXL.story = { name:'Grid column spacing xl'}

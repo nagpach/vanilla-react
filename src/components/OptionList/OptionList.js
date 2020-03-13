@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export class OptionList extends Component {
+
   render() {
     return (
       <ul className='c-option-list'>
         {this.props.listItems.map((listItem, index) => {
-          let boundItemChange = this.onItemChange.bind(this, listItem);
+          //let boundItemChange = this.onItemChange.bind(this, listItem);
           return (
             <li
               className='c-option-list__item'
@@ -23,7 +24,7 @@ export class OptionList extends Component {
                   checked={listItem.checked}
                   disabled={listItem.disabled}
                   readOnly={listItem.readonly}
-                  onChange={boundItemChange}
+                  //onChange={boundItemChange}
                   aria-describedby={this.props.ariaDescribedBy}
                   aria-labelledby={this.props.ariaLabelledBy}
                 />

@@ -1,12 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-
 import { FooterNav } from './FooterNav';
 
-let stories = storiesOf('Molecules/Navigation/FooterNav', module);
+export default {
+  title: 'Molecules/Navigation/FooterNav'
+};
 
-stories.add('Default', () => (
+export const Default = () => (
   <div style={{ backgroundColor: '#333333' }}>
     <FooterNav />
   </div>
-));
+);

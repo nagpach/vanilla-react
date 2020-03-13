@@ -37,13 +37,13 @@ export class Tokens extends Component {
     }
 }
 
-Colors.propTypes = {
+Tokens.propTypes = {
     listItems: PropTypes.array,
     value: PropTypes.string,
     name: PropTypes.string,
     comment: PropTypes.string
 };
 
-Colors.defaultProps = {
+Tokens.defaultProps = {
     listItems: brandColors.items
 };

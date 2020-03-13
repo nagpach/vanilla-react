@@ -1,10 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { TextPassage } from './TextPassage';
 
-let stories = storiesOf('Organisms/Text/TextPassage', module);
+export default{ 
+  title: 'Organisms/Text/TextPassage'
+};
 
-stories.add('Default', () => (
+export const Default =  () => (
   <TextPassage>
     <p>
       A text passage contains arbitrary text that might come from a CMS. It
@@ -51,4 +52,4 @@ stories.add('Default', () => (
 
     <p>That is all.</p>
   </TextPassage>
-));
+);

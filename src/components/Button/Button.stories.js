@@ -1,22 +1,22 @@
 import React, { PropTypes } from 'react';
-import { storiesOf } from '@storybook/react';
-
 import { Button } from './Button';
 
-let stories = storiesOf('Molecules/Buttons/Button', module);
+export default { 
+  title: 'Molecules/Buttons/Button'
+};
 
-stories.add('Default', () => (
+export const Default =  () => (
   <Button onClick={() => console.log('clicked!!')} />
-));
+);
 
-stories.add('Secondary', () => <Button issecondary text='Secondary Button' />);
+export const Secondary =  () => <Button issecondary text='Secondary Button' />;
 
-stories.add('Icon Before', () => (
+export const  IconBefore = () => (
   <Button iconname='plus' text={'Icon Before'} />
-));
+);
 
-stories.add('Icon After', () => (
+export const  IconAfter = () => (
   <Button iconnameafter='minus' text='Icon After' />
-));
+);
 
-stories.add('Icon Only', () => <Button iconname='minus' text={false} />);
+export const  IconOnly = () => <Button iconname='minus' text={false} />;

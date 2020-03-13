@@ -1,11 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import { Section } from './Section';
 
-let stories = storiesOf('Organisms/Sections/Section', module);
+export default { 
+  title: 'Organisms/Sections/Section'
+}
 
-stories.add('Default', () => (
+export const Default = () => (
   <Section
     title='Section Title'
     description='This is a description of what the section is'
@@ -18,4 +19,4 @@ stories.add('Default', () => (
       <div className='fpo'>Subcomponent</div>
     </div>
   </Section>
-));
+);

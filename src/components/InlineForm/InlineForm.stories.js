@@ -1,15 +1,13 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
 
 
 import { InlineForm } from "./InlineForm";
 
-let stories = storiesOf("Molecules/Forms/InlineForm", module);
+export default { 
+	title: "Molecules/Forms/InlineForm"
+}
 
-
-
-stories.add("Default", () => (
+export const Default = () => (
 	<InlineForm
 		label="Search"
 		method="post"
@@ -18,4 +16,4 @@ stories.add("Default", () => (
 		placeholder="Placeholder"
 		cta="Action"
 	/>
-));
+);

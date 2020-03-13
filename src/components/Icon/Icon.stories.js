@@ -1,11 +1,10 @@
 import React, { PropTypes } from "react";
-import { storiesOf } from "@storybook/react";
-
+import { action } from '@storybook/addon-actions';
 
 import { Icon } from "./Icon";
 
-let stories = storiesOf("Atoms/Icons/Icon", module);
+export default {
+  title: 'Atoms/Icons/Icon'
+};
 
-
-
-stories.add("Default", () => <Icon />);
+export const Icons = () =>  <Icon />

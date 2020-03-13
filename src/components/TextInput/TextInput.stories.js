@@ -1,11 +1,10 @@
 import React, { PropTypes } from "react";
-import { storiesOf } from "@storybook/react";
-
 
 import { TextInput } from "./TextInput";
 
-let stories = storiesOf("Atoms/Forms/TextInput", module);
+export default  { 
+    title: "Atoms/Forms/TextInput"
+};
 
 
-
-stories.add("Default", () => <TextInput />);
+export const Default = () => <TextInput />;

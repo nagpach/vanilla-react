@@ -1,13 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import { Card } from './Card';
 
-let stories = storiesOf('Molecules/Blocks/Card', module);
+export default { 
+  title: 'Molecules/Blocks/Card'
+};
 
-stories.add('Default', () => <Card>This is the card body.</Card>);
+export const Default = () => <Card>This is the card body.</Card>;
 
-stories.add('Dark', () => (
+export const  Dark = () => (
   <Card
     theme='dark'
     title='Dark Card Title'
@@ -15,4 +16,4 @@ stories.add('Dark', () => (
   >
     This is the card body.
   </Card>
-));
+);

@@ -1,11 +1,12 @@
 import React, { PropTypes } from "react";
-import { storiesOf } from "@storybook/react";
 
 
 import { Textarea } from "./Textarea";
 
-let stories = storiesOf("Atoms/Forms/Textarea", module);
+export default { 
+    title: "Atoms/Forms/Textarea"
+};
 
 
 
-stories.add("Default", () => <Textarea />);
+export const Default = () => <Textarea />;

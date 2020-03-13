@@ -1,11 +1,10 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 
 import { PageHeader } from "./PageHeader";
 
-let stories = storiesOf("Molecules/Text/PageHeader", module);
+export default { 
+    title: "Molecules/Text/PageHeader"
+};
 
-
-
-stories.add("Default", () => <PageHeader />);
+export const Default = () => <PageHeader />;

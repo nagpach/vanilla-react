@@ -1,13 +1,13 @@
 import React, { PropTypes } from "react";
-import { storiesOf } from "@storybook/react";
-
 
 import { Select } from "./Select";
 
-let stories = storiesOf("Atoms/Forms/Select", module);
+export default {
+	title: "Atoms/Forms/Select"
+}; 
 
 
-stories.add("Default", () => (
+export const Default = () => (
 	<Select
 		listItems={[
 			{
@@ -37,4 +37,4 @@ stories.add("Default", () => (
 			}
 		]}
 	/>
-));
+);
